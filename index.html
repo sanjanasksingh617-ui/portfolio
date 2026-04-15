@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      margin-top:60px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+      
+    .projects div {
+      background: white;
+      padding: 80px;
+      text-align: center;
+      margin: 30px auto;
+      width: 300px;
+      border-radius: 10px;
+      transition: 0.3spx;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .projects {
+      text-align: center;
+      padding: 80px;
+    }
+
+    .projects div:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    .contact {
+      text-align:center;
+      padding:80px
+    }
+
+    .contact p {
+      background: #f5f5f5;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      margin: 8px;
+      border: none;
+      background: black;
+      color: white;
+      cursor: pointer;
+      border-radius: 25px;
+      display: inline-block;
+      transition:0.3s;
+    }
+
+    .hero button:hover {
+      transform: scale(1.1);
+      background: white;
+      color: black;
+    }
+    
+    .about {
+      padding: 100px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      animation: fadeIn 2s ease-in-out;
+      
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero img {
+      width:150px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      border:3px solid white;
+      transition: 0.3spx;
+      box-shadow; 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .hero button {
+      margin: 5px;
+    }
+
+    .hero p {
+      margin: 10px 0 20px;
+    }
+  
+    .skills {
+      background: #f5f5f5;
+      padding:80px;
+      text-align:center;
+    }
+
+    .skills p {
+      background: white;
+      padding: 10px;
+      margin: 10px auto;
+      width: 150px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background: black;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+     }
+
+     nav a {
+      color: white;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+     }
+
+     nav a:hover {
+      color: yellow;
+      letter-spacing: 1px;
+     }
+
+     html {
+      scroll-behavior:smooth;
+     }
+    
+
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#hero">Hero</a>
+  <a href="#skills">Skills</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+  <!-- YE HERO SECTION HAI 👇 -->
+  <section id="hero" class="hero">
+
+  <!-- 👇 Image sabse upar -->
+  <img src="sanjana.jpg" width="150" style="border-radius: 50%;">
+
+  <h1>Hello, I'm Sanjana 👋</h1>
+  <p>Aspiring Web Developer</p>
+
+  <!-- 👇 Buttons niche -->
+
+  <a href="mailto:sanjanasksingh617@gmail.com?subject=Hire Me&body=Hello Sanjana, I want to hire you">
+  <button>Hire Me</button>
+  </a>
+
+  <a href="resume.pdf" target="_blank">
+  <button>Download Resume</button>
+  </a>
+
+</section>
+  
+<section id="skills" class="skills">
+  <h2>My Skills</h2>
+  <p>HTML</p>
+  <p>CSS</p>
+  <p>JavaScript</p>
+</section>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>I am a beginner web developer passionate about creating beautiful websites using HTML & CSS.</p>
+</section>
+
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div>
+    <h3>Project 1</h3>
+    <p>Simple website using HTML & CSS</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Email: sanjanasksingh617@gmail.com</p>
+</section>
+
+</body>
+</html>
